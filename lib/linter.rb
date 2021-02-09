@@ -105,4 +105,11 @@ class Linter
             $errors += 1
         end
     end
+
+    def self.ending_semicolon(file, line, index)
+        if line.match(/;$/)
+            puts "#{file} line: #{index + 1}" + (" 'Unnecesary semicolon at the end of the line.'").yellow
+            $errors += 1
+        end
+    end
 end
