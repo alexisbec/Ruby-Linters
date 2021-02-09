@@ -1,15 +1,7 @@
 
-def some_method   
-    puts "I'm a method"
+def some_method(method, index) 
+  method - = 1
+  index = = 1
 end 
 
-puts "I'm a puts"  ;
-sum=  1+2  
-e  = M * c ** 2
-o_scale = 1 / 48r
-foo  &.  bar
-foo  &.bar
-foo&.  bar;
-[ 1,2, 3 ].each{|e| puts e}
-[ 1, 2, 3 ].each{|e| puts e}
-[1, 2, 3].each{|e| puts e}
+
