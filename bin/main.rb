@@ -9,5 +9,7 @@ file.each do |file|
     Linter.empty_line(file, line, index)
     Linter.space_between_ope(file, line, index)
     Linter.space_after_ope(file, line, index)
+    Linter.space_before_ope(file, line, index)
   end
+  puts error
 end
