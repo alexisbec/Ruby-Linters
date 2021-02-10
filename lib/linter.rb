@@ -1,5 +1,3 @@
-require 'colorize'
-
 $errors = 0
 
 def error
