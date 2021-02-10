@@ -1,6 +1,11 @@
 
-def some_method(method, index)
-  method = = 166 ;
+class  Regexp
+  counter=0
+
+
+  def sum(par) 
+    if par= =0
+      counter +=1;
+    end
+  end
 end 
-
-
