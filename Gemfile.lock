@@ -42,7 +42,7 @@ PLATFORMS
 
 DEPENDENCIES
   colorize
-  rspec
+  rspec (~> 3.0)
   rubocop
 
 BUNDLED WITH
