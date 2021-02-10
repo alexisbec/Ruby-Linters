@@ -43,9 +43,6 @@ class Linter
     when /\* =/
       puts "#{file} line: #{index + 1}" + " 'Space between two operators.'"
       $errors += 1
-    when %r{/ =}
-      puts "#{file} line: #{index + 1}" + " 'Space between two operators.'"
-      $errors += 1
     end
   end
 
@@ -64,6 +61,9 @@ class Linter
       puts "#{file} line: #{index + 1}" + " 'Space between two operators.'"
       $errors += 1
     when /\*\* =/
+      puts "#{file} line: #{index + 1}" + " 'Space between two operators.'"
+      $errors += 1
+    when %r{/ =}
       puts "#{file} line: #{index + 1}" + " 'Space between two operators.'"
       $errors += 1
     end
