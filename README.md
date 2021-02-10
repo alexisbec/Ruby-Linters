@@ -155,7 +155,7 @@ end
 
 - Clone this repo with this line: `git clone https://github.com/alexisbec/ruby-capstone.git`
 - Go to the project directory `cd ruby_capstone`
-- Install all the needed gems with: `bundle install`
+- Install colorize gem with: `gem install colorize`
 - Install rspec with: `gem install rspec`
 - Go to the `main.rb` file with: `cd .\bin\`
 - Run the command `ruby .\main.rb`
