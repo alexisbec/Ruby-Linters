@@ -1,6 +1,6 @@
 ## Ruby Capstone
 
-## Description
+# Description
 
 This is the Capstone Project from the Microverse Ruby course. I had to create my own linter, a tool that helps you to find some syntax errors in your code with the purpose of making it look better.
 
@@ -57,7 +57,6 @@ end
 ```
 
 **_Spaces between two operators_**
->> The | symbol shows where the line ends
 
 > Bad code:
 
@@ -112,6 +111,7 @@ end
 ```
 
 **_Spaces at the end of the line_**
+> The | symbol shows where the line ends
 
 > Bad code:
 
