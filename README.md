@@ -1,6 +1,6 @@
-## Ruby Capstone
+# Ruby Capstone
 
-# Description
+## Description
 
 This is the Capstone Project from the Microverse Ruby course. I had to create my own linter, a tool that helps you to find some syntax errors in your code with the purpose of making it look better.
 
