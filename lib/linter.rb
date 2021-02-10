@@ -28,7 +28,7 @@ class Linter
         end
     end
 
-    def self.space_between_ope(file, line, index)
+    def self.between_ope_1(file, line, index)
         if line.match(/\= \=/)
             puts "#{file} line: #{index + 1}" + (" 'Space between two operators.'").yellow
             $errors += 1
@@ -47,7 +47,11 @@ class Linter
         elsif line.match(/\/ \=/)
             puts "#{file} line: #{index + 1}" + (" 'Space between two operators.'").yellow
             $errors += 1
-        elsif line.match(/\% \=/)
+        end
+    end
+
+    def self.between_ope_2(file, line, index)
+        if line.match(/\% \=/)
             puts "#{file} line: #{index + 1}" + (" 'Space between two operators.'").yellow
             $errors += 1
         elsif line.match(/\! \=/)
@@ -65,7 +69,7 @@ class Linter
         end
     end
 
-    def self.space_after_ope(file, line, index)
+    def self.after_ope(file, line, index)
         if line.match(/\=./)
             puts "#{file} line: #{index + 1}" + (" 'Missing space after operator.'").yellow
             $errors += 1
@@ -75,7 +79,7 @@ class Linter
         end
     end
 
-    def self.space_before_ope(file, line, index)
+    def self.before_ope_1(file, line, index)
         if line.match(/.\=/)
             puts "#{file} line: #{index + 1}" + (" 'Missing space before operator.'").yellow
             $errors += 1
@@ -91,7 +95,11 @@ class Linter
         elsif line.match(/.\//)
             puts "#{file} line: #{index + 1}" + (" 'Missing space before operator.'").yellow
             $errors += 1
-        elsif line.match(/.\%/)
+        end
+    end
+
+    def self.before_ope_2(file, line, index)
+        if line.match(/.\%/)
             puts "#{file} line: #{index + 1}" + (" 'Missing space before operator.'").yellow
             $errors += 1
         elsif line.match(/.\!/)
