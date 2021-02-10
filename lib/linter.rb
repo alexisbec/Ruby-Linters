@@ -1,3 +1,5 @@
+# rubocop:disable Metrics/CyclomaticComplexity
+
 $errors = 0
 
 def error
@@ -125,3 +127,5 @@ class Linter
     end
   end
 end
+
+# rubocop:enable Metrics/CyclomaticComplexity
