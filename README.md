@@ -153,11 +153,10 @@ end
 
 ## Getting started
 
-**1. Clone the repository**
-
 - Clone this repo with this line: `git clone https://github.com/alexisbec/ruby-capstone.git`
 - Go to the project directory `cd ruby_capstone`
-- Go to the `main.rb` file with `cd .\bin\`
+- Install all the needed gems with: `bundle install`
+- Go to the `main.rb` file with: `cd .\bin\`
 - Run the command `ruby .\main.rb`
 
 ## Author
