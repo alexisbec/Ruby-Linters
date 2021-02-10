@@ -1,50 +1,50 @@
 $errors = 0
 
 def error
-  "#{$errors} ERRORS FOUND, NEED TO BE FIXED.".red
+  "#{$errors} ERRORS FOUND, NEED TO BE FIXED."
 end
 
 class Linter
   def self.two_spaces(file, line, index)
     return unless line.match(/\S\s{2,}\S/)
 
-    puts "#{file} line: #{index + 1}" + " 'Two spaces between elements'".yellow
+    puts "#{file} line: #{index + 1}" + " 'Two spaces between elements'"
     $errors += 1
   end
 
   def self.ending_spaces(file, line, index)
     return unless line.match(/\s{2,}$/)
 
-    puts "#{file} line: #{index + 1}" + " 'Ending blank space(s) in the line.'".yellow
+    puts "#{file} line: #{index + 1}" + " 'Ending blank space(s) in the line.'"
     $errors += 1
   end
 
   def self.empty_line(file, line, index)
     return unless line.strip == ''
 
-    puts "#{file} line: #{index + 1}" + " 'Unnecesary empty line'".yellow
+    puts "#{file} line: #{index + 1}" + " 'Unnecesary empty line'"
     $errors += 1
   end
 
   def self.between_ope1(file, line, index)
     case line
     when /= =/
-      puts "#{file} line: #{index + 1}" + " 'Space between two operators.'".yellow
+      puts "#{file} line: #{index + 1}" + " 'Space between two operators.'"
       $errors += 1
     when /- =/
-      puts "#{file} line: #{index + 1}" + " 'Space between two operators.'".yellow
+      puts "#{file} line: #{index + 1}" + " 'Space between two operators.'"
       $errors += 1
     when /\+ =/
-      puts "#{file} line: #{index + 1}" + " 'Space between two operators.'".yellow
+      puts "#{file} line: #{index + 1}" + " 'Space between two operators.'"
       $errors += 1
     when /\* \*/
-      puts "#{file} line: #{index + 1}" + " 'Space between two operators.'".yellow
+      puts "#{file} line: #{index + 1}" + " 'Space between two operators.'"
       $errors += 1
     when /\* =/
-      puts "#{file} line: #{index + 1}" + " 'Space between two operators.'".yellow
+      puts "#{file} line: #{index + 1}" + " 'Space between two operators.'"
       $errors += 1
     when %r{/ =}
-      puts "#{file} line: #{index + 1}" + " 'Space between two operators.'".yellow
+      puts "#{file} line: #{index + 1}" + " 'Space between two operators.'"
       $errors += 1
     end
   end
@@ -52,19 +52,19 @@ class Linter
   def self.between_ope2(file, line, index)
     case line
     when /% =/
-      puts "#{file} line: #{index + 1}" + " 'Space between two operators.'".yellow
+      puts "#{file} line: #{index + 1}" + " 'Space between two operators.'"
       $errors += 1
     when /! =/
-      puts "#{file} line: #{index + 1}" + " 'Space between two operators.'".yellow
+      puts "#{file} line: #{index + 1}" + " 'Space between two operators.'"
       $errors += 1
     when /> =/
-      puts "#{file} line: #{index + 1}" + " 'Space between two operators.'".yellow
+      puts "#{file} line: #{index + 1}" + " 'Space between two operators.'"
       $errors += 1
     when /< =/
-      puts "#{file} line: #{index + 1}" + " 'Space between two operators.'".yellow
+      puts "#{file} line: #{index + 1}" + " 'Space between two operators.'"
       $errors += 1
     when /\*\* =/
-      puts "#{file} line: #{index + 1}" + " 'Space between two operators.'".yellow
+      puts "#{file} line: #{index + 1}" + " 'Space between two operators.'"
       $errors += 1
     end
   end
@@ -72,10 +72,10 @@ class Linter
   def self.after_ope(file, line, index)
     case line
     when /=./
-      puts "#{file} line: #{index + 1}" + " 'Missing space after operator.'".yellow
+      puts "#{file} line: #{index + 1}" + " 'Missing space after operator.'"
       $errors += 1
     when /\*./
-      puts "#{file} line: #{index + 1}" + " 'Missing space after operator.'".yellow
+      puts "#{file} line: #{index + 1}" + " 'Missing space after operator.'"
       $errors += 1
     end
   end
@@ -83,19 +83,19 @@ class Linter
   def self.before_ope1(file, line, index)
     case line
     when /.=/
-      puts "#{file} line: #{index + 1}" + " 'Missing space before operator.'".yellow
+      puts "#{file} line: #{index + 1}" + " 'Missing space before operator.'"
       $errors += 1
     when /.\*/
-      puts "#{file} line: #{index + 1}" + " 'Missing space before operator.'".yellow
+      puts "#{file} line: #{index + 1}" + " 'Missing space before operator.'"
       $errors += 1
     when /.-/
-      puts "#{file} line: #{index + 1}" + " 'Missing space before operator.'".yellow
+      puts "#{file} line: #{index + 1}" + " 'Missing space before operator.'"
       $errors += 1
     when /.\+/
-      puts "#{file} line: #{index + 1}" + " 'Missing space before operator.'".yellow
+      puts "#{file} line: #{index + 1}" + " 'Missing space before operator.'"
       $errors += 1
     when %r{./}
-      puts "#{file} line: #{index + 1}" + " 'Missing space before operator.'".yellow
+      puts "#{file} line: #{index + 1}" + " 'Missing space before operator.'"
       $errors += 1
     end
   end
@@ -103,16 +103,16 @@ class Linter
   def self.before_ope2(file, line, index)
     case line
     when /.%/
-      puts "#{file} line: #{index + 1}" + " 'Missing space before operator.'".yellow
+      puts "#{file} line: #{index + 1}" + " 'Missing space before operator.'"
       $errors += 1
     when /.!/
-      puts "#{file} line: #{index + 1}" + " 'Missing space before operator.'".yellow
+      puts "#{file} line: #{index + 1}" + " 'Missing space before operator.'"
       $errors += 1
     when /.</
-      puts "#{file} line: #{index + 1}" + " 'Missing space before operator.'".yellow
+      puts "#{file} line: #{index + 1}" + " 'Missing space before operator.'"
       $errors += 1
     when /.>/
-      puts "#{file} line: #{index + 1}" + " 'Missing space before operator.'".yellow
+      puts "#{file} line: #{index + 1}" + " 'Missing space before operator.'"
       $errors += 1
     end
   end
@@ -120,7 +120,7 @@ class Linter
   def self.ending_semicolon(file, line, index)
     case line
     when /;$/
-      puts "#{file} line: #{index + 1}" + " 'Unnecesary semicolon at the end of the line.'".yellow
+      puts "#{file} line: #{index + 1}" + " 'Unnecesary semicolon at the end of the line.'"
       $errors += 1
     end
   end
