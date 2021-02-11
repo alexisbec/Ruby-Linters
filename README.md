@@ -18,7 +18,7 @@ The linter describes all the errors that your program has and the total of the e
 
 ## Try it yourself
 
-- [Live Demo](https://repl.it/@alexisbec/ruby-capstone#.replit)
+- [Live Demo](https://repl.it/@alexisbec/ruby-capstone#bin/main.rb)
 
 ## Errors
 
