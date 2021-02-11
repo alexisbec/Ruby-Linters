@@ -81,14 +81,14 @@ class Linter
     when /\* =/
       $errors += 1
       "#{file} line: #{index + 1} 'Space between two operators.'\n"
+    when /% =/
+      $errors += 1
+      "#{file} line: #{index + 1} 'Space between two operators.'\n"
     end
   end
 
   def self.between_ope2(file, line, index)
     case line
-    when /% =/
-      $errors += 1
-      "#{file} line: #{index + 1} 'Space between two operators.'\n"
     when /! =/
       $errors += 1
       "#{file} line: #{index + 1} 'Space between two operators.'\n"
