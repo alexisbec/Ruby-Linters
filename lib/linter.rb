@@ -1,7 +1,7 @@
 # rubocop: disable Style/GuardClause
+# rubocop: disable Metrics/CyclomaticComplexity
 
 require_relative 'error'
-require 'colorize'
 
 private
 
@@ -127,3 +127,4 @@ class Linter
 end
 
 # rubocop: enable Style/GuardClause
+# rubocop: enable Metrics/CyclomaticComplexity
