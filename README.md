@@ -16,6 +16,10 @@ The linter describes all the errors that your program has and the total of the e
 
 ![screenshot](assets/output_screenshot.png)
 
+## Try it yourself
+
+- [Live Demo](https://repl.it/@alexisbec/ruby-capstone#.replit)
+
 ## Errors
 
 Here are some examples of bad / good code that the linter checks.
@@ -155,10 +159,12 @@ end
 
 - Clone this repo with this line: `git clone https://github.com/alexisbec/ruby-capstone.git`
 - Go to the project directory `cd ruby_capstone`
-- Install colorize gem with: `gem install colorize`
-- Install rspec with: `gem install rspec`
-- Go to the `main.rb` file with: `cd .\bin\`
-- Run the command `ruby .\main.rb`
+- Install all the needed gems with: `bundle install`
+- Run the linter with: `ruby .\bin\main.rb`
+
+## Video Description
+
+- [Watch Video](https://www.loom.com/share/08f8dc40954448a79a92219a2a3f39da)
 
 ## Author
 
