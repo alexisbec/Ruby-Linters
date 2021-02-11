@@ -16,10 +16,6 @@ The linter describes all the errors that your program has and the total of the e
 
 ![screenshot](assets/output_screenshot.png)
 
-## Try it yourself
-
-- [Live Demo](https://repl.it/@alexisbec/ruby-capstone#bin/main.rb)
-
 ## Errors
 
 Here are some examples of bad / good code that the linter checks.
